@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def redirect_to_discord():
-    return redirect("https://discord.gg/78ZeMES4xC")
+    return redirect("https://discord.gg/78ZeMES4xC", code=302)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run()
